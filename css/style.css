@@ -70,11 +70,9 @@ body{
 	background-position: -300px 0;
 }
 #nuage1{
-	display:block;
 	position:absolute;
-	margin-left: 40%;
-	margin-top: 40%;
-	background:url("../images/Nuage-1.gif") 0 0 no-repeat;
+	margin-left:40%;
+	margin-top:40%;
 }
 #try-again{
 	width:700px;
