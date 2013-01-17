@@ -137,6 +137,7 @@ a:focus{
 }
 #people:hover{
 	background-position: -200px 0;
+	cursor: default;
 }
 #ordi{
 	position:absolute;
