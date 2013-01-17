@@ -109,7 +109,7 @@
 				window.scrollTo(0,0);
 				window.scrollTo(initialPositionX,initialPositionY);
     		 	
-    		 	$(document.body).append("<div id='slidingSpacesNavigationFeedback'></div>");
+    		 	//$(document.body).append("<div id='slidingSpacesNavigationFeedback'></div>");
     		 	$("#slidingSpacesNavigationFeedback").hide();
     		 	$("#slidingSpacesNavigationFeedback").width(displayWidth);
     		 	$("#slidingSpacesNavigationFeedback").height(displayHeight);
@@ -462,7 +462,7 @@
 							if(typeof($("#"+matrix[r][c].id).attr("title")) != "undefined"){
 								title = "title='"+$("#"+matrix[r][c].id).attr("title")+"'";
 							}
-							$("#slidingSpacesNavigationMap").append("<a "+id+" class='"+rightClass+"' "+href+" "+title+"></a>");
+							//$("#slidingSpacesNavigationMap").append("<a "+id+" class='"+rightClass+"' "+href+" "+title+"></a>");
 						}
 						
 						$("#slidingSpacesNavigationMap").append("<br clear='all'/>");

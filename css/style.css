@@ -70,6 +70,8 @@ a:focus{
 	position:absolute;
 	width:300px;
 	height:300px;
+	max-width:30%;
+	max-height:35%;
 	background:url("../images/Sprite/soleilSprite.png") 0 0 no-repeat;
 }
 #soleil:hover{
@@ -78,12 +80,14 @@ a:focus{
 #nuage1{
 	position:relative;
 	margin-left:25%;
-	margin-top:5%;
+	margin-top:0%;
+	z-index:11;
 }
 #nuage2{
 	position:relative;
 	margin-left:5%;
-	margin-top:5%;
+	margin-top:0%;
+	z-index:10;
 }
 #try-again{
 	width:700px;
@@ -96,6 +100,7 @@ a:focus{
         -o-transition: top 3000ms ease-in 1000ms;
         transition: top 3000ms ease-in 1000ms;
 }
+<<<<<<< HEAD
 
 #try-again:target{
 	margin-top:0px;
@@ -106,3 +111,23 @@ a:focus{
 	transition: margin-top 3s linear;
 }
 
+=======
+#oiseau{
+	position:relative;
+	margin-left:40%;
+	margin-top:-15%;
+	z-index:2;
+}
+#maison{
+	position:absolute;
+	vertical-align:bottom;
+	width:400px;
+	height:400px;
+	max-width:30%;
+	max-height:50%;
+	background:url("../images/Sprite/Maisonsprite2.png") 0 0 no-repeat;
+}
+#maison:hover{
+	background-position: -480px 0;
+}
+>>>>>>> a59f1a65f37d43b0951b185b0a33effe682d855f
