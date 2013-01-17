@@ -1,0 +1,127 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="it">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=8" />
+		<title>Lanternier Thomas</title>
+  		<link rel="stylesheet" href="css/style.css" />
+  		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+  		<link rel="stylesheet" href="css/bootstrap.min.css" />
+  		<link rel="stylesheet" href="http://www.alessandroferrini.it/lab/jQueryPlugins/ferroSlider/jquery.ferro.ferroSlider.css" type="text/css">
+ 
+	</head>
+	
+	
+	<body>
+		
+		<div id="div1" class="slidingSpaces" title="Page 1">
+   			 <div id="presentation" style="width:40%;margin-left:5%;margin-top:50px;float:left;">
+                      <h2 id="title">Lanternier Thomas, Web Développeur</h2>
+                                            
+                      <div>
+                      	<h4>Bienvenue sur mon portfolio,je suis Thomas Lanternier, un jeune développeur web et actuellement étudiant à l'IUT de Belfort-Montbéliard </h4>
+                          
+                        <figure><img id="photo" src="img/photo_cv.jpg" alt="image about" style="float:left;"/></figure>
+                         
+                          <p>
+                              Mes compétences sont multiples, je développe dans le web depuis maintenant 3 ans et 
+                              je maitrise trés bien des langages telle que HTML/CSS ou encore PHP et MySQL. 
+                              Je possède également des compétences en javascript, ajax et jQuery. je m'intéresse également de 
+                              trés près depuis quelques temps a l'HTML5/CSS3 et également au responsive design. Je suis actuellement à la recherche d'un stage
+                              dans le cadre de ma licence donc n'hésitez pas à me contacter.
+                          </p>
+                      </div>
+			</div>
+			<div style="width=60%;">
+				<blockquote class="pull-right" style="margin-right:40px;margin-top:50px;">
+				  <h1 id="menu">Compétences</h1>
+				  
+				  <h1 id="menu">Contact</h1>
+				</blockquote>
+			</div>
+			<div class="span12" id="timeline" style="margin-top:10%;width:90%;height:50px;background-color:white;">
+				
+				
+			</div>
+</div>
+<div id="div2" class="slidingSpaces" title="Page 2">
+    <div id="blocs span11" style="margin-left:10%;margin-top:5%;">
+                          <div class="bloc">
+                              <h2 style="margin-left:100px;">Développement Web</h2>
+                              <br>
+                              <p class="competences">HTML(5)/CSS(3)</p><span id="progress"><progress id="progressBar" value="100" min="0" max="100"></progress></span>
+                              <br>
+                              <p class="competences">PHP/MySQL</p><span id="progress"><progress id="progressBar" value="80" min="0" max="100"></progress></span>
+                           	  <br>
+                              <p class="competences">Javascript/Ajax</p><span id="progress"><progress id="progressBar" value="70" min="0" max="100"></progress></span>
+                              <br>
+                              <p class="competences">Jquery</p><span id="progress"><progress id="progressBar" value="40" min="0" max="100"></progress></span>
+                              
+                          </div>
+                          <div class="bloc">
+                          	<h2 style="margin-left:100px;">Développement Mobile</h2>
+                              <br>
+                              <p class="competences">Android</p><span id="progress"><progress id="progressBar" value="50" min="0" max="100"></progress></span>
+                              <br>
+                              <p class="competences">IOS</p><span id="progress"><progress id="progressBar" value="30" min="0" max="100"></progress></span>
+                           	  <br>
+                              <p class="competences">Responsive design</p><span id="progress"><progress id="progressBar" value="70" min="0" max="100"></progress></span>
+                              
+                              
+                          </div>
+                          <div class="bloc">
+                          	<h2 style="margin-left:0px;">Autres</h2>
+                              <br>
+                              <p class="competences">POO</p><span id="progress"><progress id="progressBar" value="80" min="0" max="100"></progress></span>
+                              <br>
+                              <p class="competences">JAVA</p><span id="progress"><progress id="progressBar" value="70" min="0" max="100"></progress></span>
+                           	  <br>
+                              <p class="competences">UML/MERISE</p><span id="progress"><progress id="progressBar" value="90" min="0" max="100"></progress></span>
+                          </div>
+            </div>
+</div>
+<div id="div3" class="slidingSpaces" title="Page 3">
+    third page  
+</div>
+<div id="div4" class="slidingSpaces" title="Page 4">
+    fourth page 
+</div>
+<div id="div5" class="slidingSpaces" title="Page 5">
+    fifth page  
+</div>
+
+	</body>
+	
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js" type="text/javascript"></script>
+		<script src="http://www.alessandroferrini.it/lab/jQueryPlugins/jquery.easing.1.3.js" type="text/javascript"></script>
+		<script src="http://www.alessandroferrini.it/lab/jQueryPlugins/ferroSlider/v/1.2/jquery.ferro.ferroSlider-1.2.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		var displace = [
+				[
+					{full:1,moveDirection: 'xy'},{full:1,first:true},{full:1,moveDirection:'xy'}
+				],
+				[
+					{full:0},{full:1,moveDirection:'yx'},{full:0}
+				],
+				[
+					{full:0},{full:1,moveDirection:'yx'},{full:0}
+				]
+		];
+		
+		$(document).ready(function() {
+			$(".slidingSpaces").ferroSlider({
+				axis					: 'xy',
+				displace				: displace,
+				easing					: 'easeInOutExpo',
+				createMap				: true,
+				feedbackArrows			: true,
+				fullScreenBackground	: true,
+				mapPosition				: 'top_center',
+				backGroundImageClass	: 'bg',
+				preloadBackgroundImages	: true,
+				time					: 300
+			});
+		});
+	</script>
+</html>
