@@ -21,7 +21,7 @@
 			<a href="#div2" class="slidingSpacesNavigationDot" onclick="tryagain1();"><img src="images/Nuage-2.gif" id="nuage2"/></a></div>
 			<img src="images/oiseaupetit.png" id="oiseau"/>
 			<div>
-				<a href="#div3" id="maison" class="slidingSpacesNavigationDot"></a>
+				<a href="#div3" id="maison" class="slidingSpacesNavigationDot" onclick="tryagain2();"></a>
 			</div>
 
 			<!--<img src="images/oiseaupetit.png" id="oiseau"/>
@@ -32,14 +32,18 @@
 		</div>
 		<div id="div2" class="slidingSpaces" title="Page 2">
 
-			<img src="images/try-again.png" id="try-again"/>
+			<a class="slidingSpacesNavigationDot" href="#div1" onclick="tryagaininv1();"><img src="images/try-again.png" id="try-again"/></a>
 
     		<p id="page2">Page 2</p>
 		</div>
 		<div id="div3" class="slidingSpaces" title="Page 3">
+			
+			<a class="slidingSpacesNavigationDot" href="#div1" onclick="tryagaininv2();"><img src="images/try-again.png" id="try-again2"/></a>
     		third page  
 		</div>
 		<div id="div4" class="slidingSpaces" title="Page 4">
+			
+			<a class="slidingSpacesNavigationDot" href="#div1" onclick="tryagaininv3();"><img src="images/try-again.png" id="try-again3"/></a>
     		fourth page 
 		</div>
 		<div id="div5" class="slidingSpaces" title="Page 5">
@@ -85,14 +89,29 @@
             var top =  0;
             el.setAttribute("style","top: " + top + "px;");
     }
-    function tryagain2() {
+    function tryagaininv1() {
         	var el = document.getElementById('try-again');
+            var top =  -700;
+            el.setAttribute("style","top: " + top + "px;");
+    }
+    function tryagain2() {
+        	var el = document.getElementById('try-again2');
             var top =  0;
+            el.setAttribute("style","top: " + top + "px;");
+    }
+    function tryagaininv2() {
+        	var el = document.getElementById('try-again2');
+            var top =  -700;
             el.setAttribute("style","top: " + top + "px;");
     }
     function tryagain3() {
         	var el = document.getElementById('try-again');
             var top =  0;
+            el.setAttribute("style","top: " + top + "px;");
+    }
+    function tryagaininv3() {
+        	var el = document.getElementById('try-again3');
+            var top =  -700;
             el.setAttribute("style","top: " + top + "px;");
     }
     
