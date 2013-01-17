@@ -79,3 +79,9 @@ body{
 	margin-left:5%;
 	margin-top:5%;
 }
+#try-again{
+	width:700px;
+	height:400px;
+	position:absolute;
+	margin-top:-700px;
+}
