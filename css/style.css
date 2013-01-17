@@ -72,7 +72,6 @@ body{
 #nuage1{
 	display:block;
 	position:absolute;
-	margin-left: 40%;
-	margin-top: 40%;
-	background:url("../images/Nuage-1.gif") 0 0 no-repeat;
+	
+	background:url("../images/Nuage-1.gif");
 }
