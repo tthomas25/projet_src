@@ -44,7 +44,9 @@ body{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66b6fc', endColorstr='#b2e1ff',GradientType=0 ); /* IE6-9 */
 	background: linear-gradient(top, #66b6fc 0%,#b2e1ff 100%); /* W3C */
 }
-
+a:focus{
+	outline:none;
+}
 #slidingLinkMenu a{
 	text-decoration:none;
 	color:#3f4c6b;
