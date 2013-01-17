@@ -89,5 +89,20 @@ a:focus{
 	width:700px;
 	height:400px;
 	position:absolute;
-	margin-top:-700px;
+	top:-700px;
+	left:200px;
+	-webkit-transition: top 3000ms ease-in 1000ms;
+        -moz-transition: top 3000ms ease-in 1000ms;
+        -o-transition: top 3000ms ease-in 1000ms;
+        transition: top 3000ms ease-in 1000ms;
 }
+
+#try-again:target{
+	margin-top:0px;
+	-webkit-transition: margin-top 3s linear;
+	-moz-transition: margin-top 3s linear;
+	-o-transition: margin-top 3s linear;
+	-ms-transition: margin-top 3s linear;
+	transition: margin-top 3s linear;
+}
+

@@ -17,8 +17,8 @@
 		
 		<div id="div1" class="slidingSpaces" title="Page 1">
 			<a id="soleil" href="#"></a>
-			<a href="#div2" class="slidingSpacesNavigationDot"><img src="images/Nuage-1.gif" id="nuage1"/></a>
-			<a href="#div2" class="slidingSpacesNavigationDot"><img src="images/Nuage-2.gif" id="nuage2"/></a>
+			<a href="#div2" class="slidingSpacesNavigationDot" onclick="tryagain1();"><img src="images/Nuage-1.gif" id="nuage1"/></a>
+			<a href="#div2" class="slidingSpacesNavigationDot" onclick="tryagain1();"><img src="images/Nuage-2.gif" id="nuage2"/></a>
 			<!--<img src="images/oiseaupetit.png" id="oiseau"/>
 			<img src="images/arbre-a.png	" id="nuage"/>-->
 			
@@ -29,7 +29,7 @@
 
 			<img src="images/try-again.png" id="try-again"/>
 
-    		<p>Page 2</p>
+    		<a href="#try-again"><p id="page2">Page 2</p></a>
 		</div>
 		<div id="div3" class="slidingSpaces" title="Page 3">
     		third page  
@@ -74,4 +74,22 @@
 			});
 		});
 	</script>
+	<script type="text/javascript">
+    function tryagain1() {
+        	var el = document.getElementById('try-again');
+            var top =  0;
+            el.setAttribute("style","top: " + top + "px;");
+    }
+    function tryagain2() {
+        	var el = document.getElementById('try-again');
+            var top =  0;
+            el.setAttribute("style","top: " + top + "px;");
+    }
+    function tryagain3() {
+        	var el = document.getElementById('try-again');
+            var top =  0;
+            el.setAttribute("style","top: " + top + "px;");
+    }
+    
+</script>
 </html>
