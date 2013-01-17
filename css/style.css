@@ -70,8 +70,6 @@ a:focus{
 	position:absolute;
 	width:300px;
 	height:300px;
-	max-width:30%;
-	max-height:35%;
 	background:url("../images/Sprite/soleilSprite.png") 0 0 no-repeat;
 }
 #soleil:hover{
@@ -103,7 +101,7 @@ a:focus{
 }
 #maison{
 	position:absolute;
-	vertical-align:bottom;
+	margin-top:5%;
 	width:400px;
 	height:400px;
 	max-width:30%;
