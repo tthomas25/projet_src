@@ -98,18 +98,7 @@ a:focus{
         -o-transition: top 3000ms ease-in 1000ms;
         transition: top 3000ms ease-in 1000ms;
 }
-<<<<<<< HEAD
 
-#try-again:target{
-	margin-top:0px;
-	-webkit-transition: margin-top 3s linear;
-	-moz-transition: margin-top 3s linear;
-	-o-transition: margin-top 3s linear;
-	-ms-transition: margin-top 3s linear;
-	transition: margin-top 3s linear;
-}
-
-=======
 #oiseau{
 	position:relative;
 	margin-left:40%;
@@ -128,4 +117,4 @@ a:focus{
 #maison:hover{
 	background-position: -480px 0;
 }
->>>>>>> a59f1a65f37d43b0951b185b0a33effe682d855f
+
