@@ -10,7 +10,7 @@ body{
 	font-size:12px; 
 	line-height:16px;
 	position:absolute;
-	background-image:url(../img/bg_diag.png);
+	background-color: #A9EAFF; 
 }
 @font-face {
     font-family: 'LeagueGothicRegular';
@@ -23,30 +23,6 @@ body{
     font-style: normal;
 }
 
-h2#title{
-    font-family: 'LeagueGothicRegular';
-    font-size: 28px;
-    font-weight: normal;
-    line-height: 42px;
-    color:#62bcda;
-}
-h1#menu{
-    font-family: 'LeagueGothicRegular';
-    font-size: 60px;
-    font-weight: normal;
-    line-height: 42px;
-    color:#62bcda;
-}
-#photo{
-	width: 141px;
-	height: 175px;
-	border: 3px solid #999;
-	margin-right:30px;
-	padding:5px 5px 5px 5px;
-	-moz-box-shadow: 5px 5px 0px #999;
-	-webkit-box-shadow: 5px 5px 0px #999;
-    box-shadow: 2px 2px 0px #999;
-}
 
 #slidingLinkMenu{
 	position:absolute;
@@ -84,101 +60,19 @@ h1#menu{
 	list-style-type: none;
 	padding-right: 5px;
 }
-.competences{
-	font-family: 'LeagueGothicRegular';
-    font-size: 18px;
-    font-weight: normal;
-    color:#62bcda;
-    float: left;
-    width:50px;
-    margin-right:50px;
-    
+#soleil{
+	position:absolute;
+	width:300px;
+	height:300px;
+	background:url("../images/Sprite/soleilSprite.png") 0 0 no-repeat;
 }
-progress{
-	width:80%;
-	height:25px;
-	margin-bottom:10px;
-   padding: 3px 3px 2px 3px;
-   background: #333; 
-   border: 1px solid rgba(0,0,0,.5);
-   border-radius: 15px;
-   
+#soleil:hover{
+	background-position: -300px 0;
 }
-
-progress::-moz-progress-bar{
-   border-radius:10px;
-   background: #09c;
-   background: 
-     -moz-repeating-linear-gradient(
-       45deg, 
-       rgba(255,255,255,.2) 0,
-       rgba(255,255,255,.2) 10px, 
-       rgba(255,255,255,0) 10px,
-       rgba(255,255,255,0) 20px
-     ),
-     -moz-linear-gradient(
-       rgba(255,255,255,.1) 50%,
-       rgba(255,255,255,0) 60%
-     ),
-     #09c;
-   background: 
-     repeating-linear-gradient(
-       45deg, 
-       rgba(255,255,255,.2) 0,
-       rgba(255,255,255,.2) 10px, 
-       rgba(255,255,255,0) 10px,
-       rgba(255,255,255,0) 20px
-     ),
-     linear-gradient(
-       rgba(255,255,255,.1) 50%,
-       rgba(255,255,255,0) 60%
-     ),
-     #09c;
-   background-size: 300px 20px, auto, auto;
-   background-position: -300px 0, top, top;
-   background-position: top right, top, top;
-   box-shadow: 0 1px 0 rgba(255,255,255,.5) inset, 
-               0 -1px 0 rgba(0,0,0,.8) inset,
-               0 0 2px black;
- 
-}
-progress::-webkit-progress-value{
-   border-radius:10px;
-   background: #09c;
-   background: 
-     -moz-repeating-linear-gradient(
-       45deg, 
-       rgba(255,255,255,.2) 0,
-       rgba(255,255,255,.2) 10px, 
-       rgba(255,255,255,0) 10px,
-       rgba(255,255,255,0) 20px
-     ),
-     -moz-linear-gradient(
-       rgba(255,255,255,.1) 50%,
-       rgba(255,255,255,0) 60%
-     ),
-     #09c;
-   background: 
-     repeating-linear-gradient(
-       45deg, 
-       rgba(255,255,255,.2) 0,
-       rgba(255,255,255,.2) 10px, 
-       rgba(255,255,255,0) 10px,
-       rgba(255,255,255,0) 20px
-     ),
-     linear-gradient(
-       rgba(255,255,255,.1) 50%,
-       rgba(255,255,255,0) 60%
-     ),
-     #09c;
-   background-size: 300px 20px, auto, auto;
-   background-position: -300px 0, top, top;
-   background-position: top right, top, top;
-   box-shadow: 0 1px 0 rgba(255,255,255,.5) inset, 
-               0 -1px 0 rgba(0,0,0,.8) inset,
-               0 0 2px black;
- 
-}
-progress::-webkit-progress-bar{
-   background: transparent;
+#nuage1{
+	display:block;
+	position:absolute;
+	margin-left: 40%;
+	margin-top: 40%;
+	background:url("../images/Nuage-1.gif") 0 0 no-repeat;
 }
