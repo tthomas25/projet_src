@@ -74,9 +74,14 @@ body{
 	background-position: -300px 0;
 }
 #nuage1{
-	position:absolute;
-	margin-left:40%;
-	margin-top:40%;
+	position:relative;
+	margin-left:25%;
+	margin-top:5%;
+}
+#nuage2{
+	position:relative;
+	margin-left:5%;
+	margin-top:5%;
 }
 #try-again{
 	width:700px;
