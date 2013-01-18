@@ -24,8 +24,10 @@
 				<a id="people" class="slidingSpacesNavigationDot"></a>
 				<a href="#div4" id="arbre" class="slidingSpacesNavigationDot" onclick="tryagain3();"></a>
 				<a href="#div5" id="ordi" class="slidingSpacesNavigationDot"></a>
-				<div id="container_herbe"><img src="images/herbe.png" id="herbe"/><div id="herbe_block"></div>
-					</div>
+				<div id="container_herbe">
+					<img src="images/herbe.png" id="herbe"/>
+					<div id="herbe_block"></div>
+				</div>
 				
 			</div>
 
@@ -34,14 +36,27 @@
 		</div>
 
 		<div id="div2" class="slidingSpaces" title="Page 2">
-
-			<!-- <img src="images/try-again.png" id="try-again"/> -->
+			<img src="images/try-again.png" id="try-again"/>
 			<img src="images/zozio.gif" id="bird" />
 			<img src="images/merde.png" id="shit_bird" />
-			<img src="images/garcon1petit.png" id="man_bird" />
-			
-			
+
+
+			<a id="soleil" href="#"></a>
+			<img src="images/oiseaupetit.png" id="oiseau" />
+			<div>
+				<a href="#div3" id="maison" class="" ></a>
+
+				<img id="man_bird" src="images/garcon1petit.png" />
+				<a href="#div4" id="arbre" class="slidingSpacesNavigationDot" onclick="tryagain3();"></a>
+				<a href="#div5" id="ordi" class="slidingSpacesNavigationDot"></a>
+
+
+			<div id="container_herbe">
+					<img src="images/herbe.png" id="herbe"/>
+					<div id="herbe_block"></div>
+			</div>
 		</div>
+
 		<div id="div3" class="slidingSpaces" title="Page 3">
 			
 		</div>
@@ -129,12 +144,14 @@
 		function bird_mouvement() {
 			document.getElementById('bird').style.right = '1500px';
 			setTimeout(function() {
-				document.getElementById('shit_bird').style.bottom = '0px';
-
-			}, 1000);
+				document.getElementById('shit_bird').style.visibility = 'visible';
+				document.getElementById('shit_bird').style.top = '500px';
+				setTimeout(function() {
+					document.getElementById('shit_bird').style.visibility = 'hidden';
+					document.getElementById('man_bird').setAttribute("src", "images/Garconmerde.gif");
+				}, 1000);
+			}, 1500);
 		}
-		
-		
 	</script>
 
 </html>

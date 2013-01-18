@@ -111,6 +111,7 @@ a:focus{
 	position:relative;
 	top:-700px;
 	left:200px;
+	z-index:100;
 	-webkit-transition: top 2000ms ease-in 100ms;
         -moz-transition: top 2000ms ease-in 100ms;
         -o-transition: top 2000ms ease-in 100ms;
@@ -230,13 +231,22 @@ width:100%;
 }
 
 #shit_bird {
-	display:none;
-	top:0;
-	right:300px;
+	visibility:hidden;
+	position:absolute;
+	top:200px;
+	left:35%;
+	width:100px;
 
-	-webkit-transition: bottom 2000ms ease-in 100ms;
-  -moz-transition: bottom 2000ms ease-in 100ms;
-  -o-transition: bottom 2000ms ease-in 100ms;
-  transition: bottom 2000ms ease-in 100ms;
+	-webkit-transition: top 1000ms ease-in 50ms;
+  -moz-transition: top 1000ms ease-in 50ms;
+  -o-transition: top 1000ms ease-in 50ms;
+  transition: top 1000ms ease-in 50ms;
+}
+
+#man_bird {
+	position:absolute;
+	width:200px;
+	top:550px;
+	left:30%;
 }
 /* Fin Page 5 */
