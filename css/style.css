@@ -28,6 +28,21 @@ body{
     font-style: normal;
 }*/
 
+/* HOME */
+#container {
+	height:100%;
+	width:100%;
+	position:absolute;
+}
+
+#overlay {
+	background:#666;
+	height:100%;
+	width:100%;
+	position:absolute;
+}
+/* FIN HOME */
+
 #slidingLinkMenu{
 	position:absolute;
 	width:90%;
@@ -189,3 +204,25 @@ a:focus{
 #ordi:hover{
 	background-position: -200px 0;
 }
+
+
+/* Page 5 */
+#bird {
+	position:absolute;
+	right:100px;
+
+	-webkit-transition: right .6s ease-in;
+  -moz-transition: right .6s ease-in;
+  -o-transition: right .6s ease-in;
+  transition: right .6s ease-in;
+
+	/*
+	-webkit-transform: translate(3em,0); 
+	-moz-transform: translate(3em,0); 
+	-o-transform: translate(3em,0); 
+	-ms-transform: translate(3em,0); 
+	transform: translate(3em,0);
+	*/
+}
+
+/* Fin Page 5 */
