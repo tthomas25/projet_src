@@ -16,13 +16,18 @@
 	<body>
 		
 		<div id="div1" class="slidingSpaces" title="Page 1">
-			<div><a id="soleil" href="#"></a>
-			<a href="#div2" class="slidingSpacesNavigationDot"><img src="images/Nuage-1.gif" id="nuage1"/></a>
-			<a href="#div2" class="slidingSpacesNavigationDot"><img src="images/Nuage-2.gif" id="nuage2"/></a></div>
+	<div><a id="soleil" href="#"></a>
+			<a href="#div2" class="slidingSpacesNavigationDot" onclick="tryagain1();"><img src="images/Nuage-1.gif" id="nuage1"/></a>
+			<a href="#div2" class="slidingSpacesNavigationDot" onclick="tryagain1();"><img src="images/Nuage-2.gif" id="nuage2"/></a></div>
 			<img src="images/oiseaupetit.png" id="oiseau"/>
 			<div>
-				<a href="#div3" id="maison" class="slidingSpacesNavigationDot"></a>
+				<a href="#div3" id="maison" class="slidingSpacesNavigationDot" onclick="tryagain2();"></a>
+
+				<a href="#" id="people" class="slidingSpacesNavigationDot"></a>
+				<a href="#div4" id="arbre" class="slidingSpacesNavigationDot"></a>
+				<a href="#div5" id="ordi" class="slidingSpacesNavigationDot"></a>
 			</div>
+
 			<!--<img src="images/oiseaupetit.png" id="oiseau"/>
 			<img src="images/arbre-a.png	" id="nuage"/>-->
 			
@@ -31,14 +36,18 @@
 		</div>
 		<div id="div2" class="slidingSpaces" title="Page 2">
 
-			<img src="images/try-again.png" id="try-again"/>
+			<a class="slidingSpacesNavigationDot" href="#div1" onclick="tryagaininv1();"><img src="images/try-again.png" id="try-again"/></a>
 
-    		<p>Page 2</p>
+    		<p id="page2">Page 2</p>
 		</div>
 		<div id="div3" class="slidingSpaces" title="Page 3">
+			
+			<a class="slidingSpacesNavigationDot" href="#div1" onclick="tryagaininv2();"><img src="images/try-again.png" id="try-again2"/></a>
     		third page  
 		</div>
 		<div id="div4" class="slidingSpaces" title="Page 4">
+			
+			<a class="slidingSpacesNavigationDot" href="#div1" onclick="tryagaininv3();"><img src="images/try-again.png" id="try-again3"/></a>
     		fourth page 
 		</div>
 		<div id="div5" class="slidingSpaces" title="Page 5">
@@ -78,4 +87,37 @@
 			});
 		});
 	</script>
+	<script type="text/javascript">
+    function tryagain1() {
+        	var el = document.getElementById('try-again');
+            var top =  0;
+            el.setAttribute("style","top: " + top + "px;");
+    }
+    function tryagaininv1() {
+        	var el = document.getElementById('try-again');
+            var top =  -700;
+            el.setAttribute("style","top: " + top + "px;");
+    }
+    function tryagain2() {
+        	var el = document.getElementById('try-again2');
+            var top =  0;
+            el.setAttribute("style","top: " + top + "px;");
+    }
+    function tryagaininv2() {
+        	var el = document.getElementById('try-again2');
+            var top =  -700;
+            el.setAttribute("style","top: " + top + "px;");
+    }
+    function tryagain3() {
+        	var el = document.getElementById('try-again');
+            var top =  0;
+            el.setAttribute("style","top: " + top + "px;");
+    }
+    function tryagaininv3() {
+        	var el = document.getElementById('try-again3');
+            var top =  -700;
+            el.setAttribute("style","top: " + top + "px;");
+    }
+    
+</script>
 </html>
