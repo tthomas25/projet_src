@@ -15,8 +15,8 @@
 		<div id="div1" class="slidingSpaces" title="Page 1">
 
 			<a id="soleil" href="#"></a>
-			<a href="#div2" class="slidingSpacesNavigationDot" onclick="bird();"><img src="images/Nuage-1.gif" id="nuage1"/></a>
-			<a href="#div2" class="slidingSpacesNavigationDot" onclick="bird();"><img src="images/Nuage-2.gif" id="nuage2"/></a>
+			<a href="#div2" class="slidingSpacesNavigationDot" onclick="bird_mouvement();tryagain1();"><img src="images/Nuage-1.gif" id="nuage1"/></a>
+			<a href="#div2" class="slidingSpacesNavigationDot" onclick="bird_mouvement();tryagain1();"><img src="images/Nuage-2.gif" id="nuage2"/></a>
 			<div>
 				<a href="#div3" id="maison" class="" ></a>
 
@@ -121,10 +121,11 @@
 			document.getElementById('try-again3').style.top = '-700px';
 		}
 
-		function bird() {
+		function bird_mouvement() {
 			document.getElementById('bird').style.right = '1000px';
 		}
-
+		
+		
 	</script>
 
 </html>
