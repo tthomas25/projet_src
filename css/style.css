@@ -211,10 +211,10 @@ a:focus{
 	position:absolute;
 	right:100px;
 
-	-webkit-transition: right .6s ease-in;
-  -moz-transition: right .6s ease-in;
-  -o-transition: right .6s ease-in;
-  transition: right .6s ease-in;
+	-webkit-transition: right 6s ease-in 1000;
+  -moz-transition: right 6s ease-in 1000;
+  -o-transition: right 6s ease-in 1000;
+  transition: right 6s ease-in 1000;
 
 	/*
 	-webkit-transform: translate(3em,0); 
