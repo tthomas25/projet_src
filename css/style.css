@@ -229,24 +229,7 @@ width:100%;
   -o-transition: right 2000ms ease-in 100ms;
   transition: right 2000ms ease-in 100ms;
 }
-#modal {
-	visibility:hidden;
-	width:600px;
-	height:300px;
-	padding:8px;
 
-	background:rgba(0,0,0,.3);
-
-	-webkit-border-radius:8px;
-	-moz-border-radius:8px;
-	border-radius:8px;
-	position:absolute !important;
-	top:50% !important;
-	left:50% !important;
-	margin-top:-94px !important;
-	margin-left:-180px !important;
-	z-index:101;
-}
 
 #shit_bird {
 	visibility:hidden;
@@ -268,15 +251,5 @@ width:100%;
 	bottom:13%;
 }
 
-.reveal-modal-bg {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background: #000;
-    background: rgba(0,0,0,.4);
-    z-index: 100;
-    display: none;
-    top: 0;
-    left: 0;
-}
+
 /* Fin Page 5 */
