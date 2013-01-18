@@ -113,3 +113,39 @@ a:focus{
 #maison:hover{
 	background-position: -480px 0;
 }
+
+/* HOME SECTION */
+#choice{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-300px;
+	margin-top:-175px;
+}
+
+.sex{
+	height:300px;
+	width:300px;
+	float:left;
+}
+
+#men{
+	background:url("../images/garcon1petit.png") 0 0 no-repeat;
+}
+
+#girl{
+	background:url("../images/fille-a.png") 0 0 no-repeat;
+}
+
+#name{
+	margin-top:30px;
+	margin-left:150px;
+	font-size:2em;
+}
+
+#name input{
+	border-radius:10px;
+	background-color:#f3f3f3;
+}
+
+/* END HOME */
