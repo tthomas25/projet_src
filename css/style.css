@@ -70,10 +70,12 @@ a:focus{
 	position:absolute;
 	width:200px;
 	height:200px;
+		cursor: default;
 	background:url("../images/Sprite/soleilSprite.png") 0 0 no-repeat;
 }
 #soleil:hover{
 	background-position: -200px 0;
+		cursor: default;
 }
 #nuage1{
 	position:relative;
@@ -174,6 +176,7 @@ a:focus{
 }
 #people:hover{
 	background-position: -200px 0;
+	cursor: default;
 }
 #ordi{
 	position:absolute;
